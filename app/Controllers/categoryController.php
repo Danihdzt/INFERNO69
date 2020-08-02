@@ -2,11 +2,11 @@
 
 use App\Models\ProductModel;
 
-class category extends BaseController
+class categoryController extends BaseController
 {
 	public function index()
 	{
-		return view('inferno');
+		return view('category');
 	}
 
 	//--------------------------------------------------------------------
