@@ -1,0 +1,18 @@
+.fondo{
+    background: black;
+
+    font-size: large;
+}
+
+p{
+    color: white;
+}
+
+.ppp{
+    padding: 50px;
+}
+
+.fondoRegistroUsuario{
+background-image: url(imagenes/sd.jpeg);
+background-repeat: no-repeat;
+}
