@@ -122,6 +122,33 @@
                </div>
                
                
+       <div class="row">
+            <div class="col-12">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>CATEGORIA</th>
+                            <th>PRECIO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach($category $clave=>$valor):?>
+                            
+                            <tr>
+                                <td><?php echo($valor->id)?></td>
+                                <td><?php echo($valor->nombre)?></td>
+                                <td><?php echo($valor->categoria)?></td>
+                                <td><?php echo($valor->precio)?></td>
+                                <td><a href="" class="btn btn-danger">Eliminar</a></td>
+                            </tr>
+
+                        <?php endforeach?>
+                    </tbody>               
+                </table>
+            </div>
+        </div>
                
                                <!-- Button trigger modal -->
                    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#AddProducts">
@@ -161,11 +188,12 @@
                              <input type="text" class="form-control" id="Precio_Producto" name="Precio_Producto" aria-describedby="emailHelp">
                            </div>
                            <h5 class="text-center mt-4"><?php echo(session('mensaje')) ?></h5>
+                           
+                     <button class="btn btn-primary" type="submit">Add Products</button>
                      </form>                 
                      </div>
                      <div class="modal-footer">
                      <button class="btn btn-primary" type="submit">Button</button>
-                     <button class="btn btn-primary" type="submit">Add Products</button>
                     </div>
                    </div>
                  </div>

@@ -41,6 +41,9 @@ $routes->get('/lingerie', 'lingerieController::index');
 $routes->get('/programmers', 'programmersController::index');
 $routes->get('/accessories', 'accessoriesController::index');
 $routes->post('/category/agregar', 'categoryController::agregar');
+$routes->get('/category/eliminar/(:any)', 'categoryController::eliminar/$1');
+$routes->post('/category/modificar/(:any)', 'categoryController::modificar/$1');
+
 
 
 
