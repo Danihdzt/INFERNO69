@@ -19,8 +19,8 @@ class categoryController extends BaseController
 		
 		$productModel = new ProductModel();
 
-		$nombre = $this->request->getPost('Nombre');
-		$idcategoria = $this->request->getPost('Id_Categoria');
+		$nombre = $this->request->getPost('nombre');
+		$idcategoria = $this->request->getPost('idCategoria');
 		$precioproducto = $this->request->getPost('Precio_Producto');
 
 		$productModel->save([
@@ -30,28 +30,29 @@ class categoryController extends BaseController
 		]);
 
 		return redirect()->to(base_url('public/category'))->with('mensaje', 'El producto ha sido registrado con éxito!');
+		
 	}
 
-	public function eliminar($id){
+	public function eliminar($Id_Producto){
 
 		$productModel = new ProductModel();
 
-		$productModel ->where('id',$id)->delete();
+		$productModel ->where('Id_Producto',$Id_Producto)->delete();
 
 		return redirect()->to(base_url('public/category/'));
 
 	}
 
-	public function modificar($id){
+	public function modificar($Id_Producto){
 
 		$productModel = new ProductModel();
 
-		$nombre = $this->request->getPost('Nombre');
-		$idcategoria = $this->request->getPost('Id_Categoria');
-		$precioproducto = $this->request->getPost('Precio_Producto');
+		$nombre = $this->request->getPost('Nombre2');
+		$idcategoria = $this->request->getPost('Id_Categoria2');
+		$precioproducto = $this->request->getPost('Precio_Producto2');
 
 
-		$productModel->update([
+		$productModel->update($Id_Producto,[
 			'Nombre'=>$nombre,
 			'Id_Categoria'=>$idcategoria,
 			'Precio_Producto'=>$precioproducto

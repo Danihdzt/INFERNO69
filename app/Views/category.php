@@ -31,7 +31,7 @@
               </ul>
                    <!-- Button trigger modal -->
                    <button type="button" class="btn btn-outline-success mr-2" data-toggle="modal" data-target="#Register">
-                   Sing up 🔥
+                   Sing Up 🔥
                    </button>
                
                <!-- Modal -->
@@ -86,7 +86,7 @@
                
                  <!-- Button trigger modal -->
                  <button type="button" class="btn btn-outline-info mr-2" data-toggle="modal" data-target="#Loginin">
-                 Login in 😈
+                 Login In 😈
                    </button>
                
                <!-- Modal -->
@@ -110,8 +110,7 @@
                            <label for="exampleInputPassword1 " class="font-weight-bold">Password</label>
                            <input type="password" class="form-control" id="exampleInputPassword1">
                          </div>
-                         
-                       </form>
+                         </form>
                      </div>
                      <div class="modal-footer">
                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -120,44 +119,14 @@
                    </div>
                  </div>
                </div>
-               
-               
-       <div class="row">
-            <div class="col-12">
-                <table class="table table-striped table-dark">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>NOMBRE</th>
-                            <th>CATEGORIA</th>
-                            <th>PRECIO</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach($category $clave=>$valor):?>
-                            
-                            <tr>
-                                <td><?php echo($valor->id)?></td>
-                                <td><?php echo($valor->nombre)?></td>
-                                <td><?php echo($valor->categoria)?></td>
-                                <td><?php echo($valor->precio)?></td>
-                                <td><a href="" class="btn btn-danger">Eliminar</a></td>
-                            </tr>
-
-                        <?php endforeach?>
-                    </tbody>               
-                </table>
-            </div>
-        </div>
-               
-                               <!-- Button trigger modal -->
+               <!-- Button trigger modal -->
                    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#AddProducts">
                    Add Products 🍑
                    </button>
                
                <!-- Modal -->
                <div class="modal fade" id="AddProducts" tabindex="-1" role="dialog" aria-labelledby="AddProducts" aria-hidden="true">
-                 <div class="modal-dialog modal-dialog-scrollable">
+                 <div class="modal-dialog modal-dialog-scrollable modal-lg">
                    <div class="modal-content">
                      <div class="modal-header">
                        <h5 class="modal-title" id="AddProducts">Add Products</h5>
@@ -172,9 +141,9 @@
                            <input type="text" class="form-control" id="nombre" name="nombre">
                          </div>
                          <div class="form-group">
-                             <label for="categoria" class="font-weight-bold">Category</label>
+                             <label for="idCategoria" class="font-weight-bold">Category</label>
                              <h6>1=Men, 2=Lingerie, 3=Lubricants, 4=Annals, 5=Vibrators, 6=Accessories.</h6>
-                             <select class="form-control" id="Id_categoria" name="Id_categoria">
+                             <select class="form-control" id="idCategoria" name="idCategoria">
                                <option>1</option>
                                <option>2</option>
                                <option>3</option>
@@ -185,24 +154,71 @@
                            </div>
                            <div class="form-group">
                              <label for="precioProducto" class="font-weight-bold">Price</label>
-                             <input type="text" class="form-control" id="Precio_Producto" name="Precio_Producto" aria-describedby="emailHelp">
+                             <input type="number" class="form-control" id="Precio_Producto" name="Precio_Producto" aria-describedby="emailHelp">
                            </div>
                            <h5 class="text-center mt-4"><?php echo(session('mensaje')) ?></h5>
                            
                      <button class="btn btn-primary" type="submit">Add Products</button>
-                     </form>                 
+                     </form> <br><br>
+                     <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>CATEGORY</th>
+                            <th>PRICE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach($category as $clave=>$valor):?>
+                            <tr>
+                                <td><?php echo($valor->Id_Producto)?></td>
+                                <td><?php echo($valor->Nombre)?></td>
+                                <td><?php echo($valor->Id_Categoria)?></td>
+                                <td><?php echo($valor->Precio_Producto)?></td>
+                                <td><a href="<?php echo(base_url('public/category/eliminar/'.$valor->Id_Producto))?>"class="btn btn-danger">Remove</a></td>
+                                <td><button type="button" class="btn btn-success" href="#exampleModal<?php echo($valor->Id_Producto)?>" data-toggle="modal" data-target="#exampleModal">
+                                To Update</button>
+
+                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                   <div class="modal-dialog">
+                                     <div class="modal-content">
+                                       <div class="modal-header">
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                           <span aria-hidden="true">&times;</span>
+                                         </button>
+                                       </div>
+                                       <div class="modal-body" id="formulario<?php echo($valor->Id_Producto)?>">
+                                       <form action="<?= base_url('public/category/modificar/'.$valor->Id_Producto)?>" method="POST" class="mt-3">
+                                      <div class="form-group">
+                                          <input type="text" class="form-control" id="Nombre2" name="Nombre2" value="<?=$valor->Nombre?>">
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="number" class="form-control" id="Id_Categoria2" name="Id_Categoria2" value="<?=$valor->Id_Categoria?>">
+                                      </div>
+                                      <div class="form-group">
+                                          <input type="number" class="form-control" id="Precio_Producto2" name="Precio_Producto2" value="<?=$valor->Precio_Producto?>">
+                                      </div>
+                                      <button type="submit" class="btn btn-info btn-block">To Update</button>
+                                       </form>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div></td>
+                            </tr>
+                        <?php endforeach?>
+                    </tbody>               
+                </table>            
                      </div>
                      <div class="modal-footer">
-                     <button class="btn btn-primary" type="submit">Button</button>
                     </div>
                    </div>
                  </div>
                </div>
       </nav>
    </header>
-    <main>        <br><br>
-        
-        <br><br>
+    <main><br><br>
+    
         <section>
             <div class="container">
                 <div class="row">

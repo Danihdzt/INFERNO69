@@ -5,9 +5,9 @@ use CodeIgniter\Model;
 class ProductModel extends Model{
 
     protected $table= 'producto';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'Id_Producto';
 
-    protected $allowedFields = ['Nombre','Id_categoria','Precio_Producto'];
+    protected $allowedFields = ['Nombre','Id_Categoria','Precio_Producto'];
     
 
 }
