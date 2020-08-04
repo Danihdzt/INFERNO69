@@ -45,40 +45,38 @@
                        </button>
                      </div>
                      <div class="modal-body">
-                       <form>
+                     <form action="<?php echo(base_url('public/inferno/agregar'))?>" method="POST">
                          <div class="form-row">
                            <div class="col-6 mb-3 font-weight-bold">
-                             <label for="validationDefault01">Name</label>
-                             <input type="text" class="form-control" id="validationDefault01" required>
+                             <label for="nomcliente">Name</label>
+                             <input type="text" class="form-control" id="Nombre_Cliente" name="Nombre_Cliente" required>
                            </div>
                            <div class="col-md-6 mb-3 font-weight-bold">
-                             <label for="validationDefault02">Address</label>
-                             <input type="text" class="form-control" id="validationDefault02" required>
+                             <label for="direccion">Address</label>
+                             <input type="text" class="form-control" id="Direccion" name="Direccion" required>
                            </div>
                            <div class="col-md-6 mb-3 font-weight-bold">
-                             <label for="validationDefault02">Identification card</label>
-                             <input type="number" class="form-control" id="validationDefault03" required>
+                             <label for="identificacion">Identification card</label>
+                             <input type="number" class="form-control" id="Identification" name="Identification"required>
                            </div>
                            <div class="col-md-6 mb-3 font-weight-bold">
-                             <label for="validationDefault05">Email</label>
-                             <input type="email" class="form-control" id="validationDefault04" required>
+                             <label for="email">Email</label>
+                             <input type="email" class="form-control" id="Correo" name="Correo" required>
                            </div>
                          </div>
                          <div class="form-row">
                            <div class="col-md-6 mb-3  font-weight-bold">
-                             <label for="validationDefault03">Phone number</label>
-                             <input type="number" class="form-control" id="validationDefault05" required>
+                             <label for="numero">Phone number</label>
+                             <input type="number" class="form-control" id="Telefono" name="Telefono" required>
                            </div>
                            <div class="col-md-6 mb-3  font-weight-bold">
-                             <label for="validationDefault03">Password</label>
-                             <input type="password" class="form-control" id="validationDefault06" required>
+                             <label for="password">Password</label>
+                             <input type="password" class="form-control" id="Contraseña" name="Contraseña" required>
                            </div>
-                         </div>                            
+                         </div>  
+                         <h5 class="text-center mt-4"><?php echo(session('mensaje')) ?></h5>
+                         <button type="button" class="btn btn-primary">Sing up</button>                          
                        </form>
-                     </div>
-                     <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                       <button type="button" class="btn btn-primary">Sing up</button>
                      </div>
                    </div>
                  </div>

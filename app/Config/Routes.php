@@ -31,7 +31,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/inferno.69', 'inferno::index');
+$routes->get('/inferno', 'infernoController::index');
 $routes->get('/category', 'categoryController::index');
 $routes->get('/vibrators', 'vibratorsController::index');
 $routes->get('/men', 'menController::index');
@@ -43,7 +43,9 @@ $routes->get('/accessories', 'accessoriesController::index');
 $routes->post('/category/agregar', 'categoryController::agregar');
 $routes->get('/category/eliminar/(:any)', 'categoryController::eliminar/$1');
 $routes->post('/category/modificar/(:any)', 'categoryController::modificar/$1');
-
+$routes->post('/inferno/agregar', 'infernoController::agregar');
+$routes->get('/inferno/eliminar/(:any)', 'infernoController::eliminar/$1');
+$routes->post('/inferno/modificar/(:any)', 'infernoController::modificar/$1');
 
 
 

@@ -217,8 +217,7 @@
                </div>
       </nav>
    </header>
-    <main><br><br>
-    
+    <main>
         <section>
             <div class="container">
                 <div class="row">
