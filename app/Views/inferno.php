@@ -31,129 +31,139 @@
               </ul>
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-outline-success mr-2" data-toggle="modal" data-target="#Register">
-                   Sing up 🔥
+              Sing up 🔥
                    </button>
                
                <!-- Modal -->
-               <div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
-                 <div class="modal-dialog">
+               <div class="modal fade text-light" id="Register" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+                 <div class="modal-dialog modal-dialog-scrollable modal-lg">
                    <div class="modal-content">
-                     <div class="modal-header">
-                       <h5 class="modal-title" id="Register">Register in Inferno.69</h5>
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <div class="modal-header bg-dark">
+                       <h5 class="modal-title " id="Register">Register in Inferno.69</h5>
+                       <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
                          <span aria-hidden="true">&times;</span>
                        </button>
                      </div>
-                     <div class="modal-body">
+                     <div class="modal-body  bg-dark ol-12 col-md-12">
                      <form action="<?php echo(base_url('public/inferno/agregar'))?>" method="POST">
-                         <div class="form-row">
-                           <div class="col-6 mb-3 font-weight-bold">
-                             <label for="nomcliente">Name</label>
+                       <div class="form-row">
+                           <div class="col-8 mb-3 font-weight-bold mx-auto">
+                             <label for="nomcliente" class="font-weight-bold">Name</label>
                              <input type="text" class="form-control" id="Nombre_Cliente" name="Nombre_Cliente" required>
                            </div>
-                           <div class="col-md-6 mb-3 font-weight-bold">
-                             <label for="direccion">Address</label>
+                           <div class="col-md-8 mb-3 font-weight-bold mx-auto">
+                             <label for="direccion" class="font-weight-bold ">Address</label>
                              <input type="text" class="form-control" id="Direccion" name="Direccion" required>
                            </div>
-                           <div class="col-md-6 mb-3 font-weight-bold">
-                             <label for="identificacion">Identification card</label>
-                             <input type="number" class="form-control" id="Identification" name="Identification"required>
+                           <div class="col-md-8 mb-3 font-weight-bold  mx-auto">
+                           <label for="Telefono " class="font-weight-bold">Phone Number</label>
+                             <input type="number" class="form-control" id="Telefono" name="Telefono" required>
                            </div>
-                           <div class="col-md-6 mb-3 font-weight-bold">
-                             <label for="email">Email</label>
-                             <input type="email" class="form-control" id="Correo" name="Correo" required>
+                           <div class="col-md-8 mb-3 font-weight-bold  mx-auto">
+                             <label for="Correo" class="font-weight-bold">Email</label>
+                             <input type="email" class="form-control" id=" Correo" name="Correo" required>
                            </div>
                          </div>
                          <div class="form-row">
-                           <div class="col-md-6 mb-3  font-weight-bold">
-                             <label for="numero">Phone number</label>
-                             <input type="number" class="form-control" id="Telefono" name="Telefono" required>
-                           </div>
-                           <div class="col-md-6 mb-3  font-weight-bold">
-                             <label for="password">Password</label>
-                             <input type="password" class="form-control" id="Contraseña" name="Contraseña" required>
+                           <div class="col-md-8 mb-3  font-weight-bold  mx-auto">
+                             <label for="password" class="font-weight-bold ">Password</label>
+                             <input type="password" class="form-control" id="Contraseña" name="Contraseña" required><br>
+                             <button class="btn btn-primary " type="submit">Sing Up</button>
+
                            </div>
                          </div>  
-                         <h5 class="text-center mt-4"><?php echo(session('mensaje')) ?></h5>
-                         <button type="button" class="btn btn-primary">Sing up</button>                          
-                       </form>
+                                                 
+                     </form> <br><br>
+                     <table class="col-12 col-md-12 table table-striped text-light">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>PHONE NUMBER</th>
+                            <th>ADDRESS</th>
+                            <th>EMAIL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach($inferno as $clave=>$valor):?>
+                            <tr>
+                                <td><?php echo($valor->Id_Cliente)?></td>
+                                <td><?php echo($valor->Nombre_Cliente)?></td>
+                                <td><?php echo($valor->Telefono)?></td>
+                                <td><?php echo($valor->Direccion)?></td>
+                                <td><?php echo($valor->Correo)?></td>
+                                <td><a href="<?php echo(base_url('public/inferno/eliminar/'.$valor->Id_Cliente))?>"class="btn btn-danger">Remove</a></td>
+                                <td><button type="submit" class="btn btn-success" href="#exampleModal<?php echo($valor->Id_Cliente)?>" data-toggle="modal" data-target="#exampleModal<?php echo($valor->Id_Cliente)?>">
+                                To Update </button>
+                                
+
+                                 <div class="modal fade" id="exampleModal<?php echo($valor->Id_Cliente)?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                   <div class="modal-dialog">
+                                     <div class="modal-content">
+                                       <div class="modal-header">
+                                       <h5 class="modal-title" id="AddProducts">To Update</h5>
+                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                           <span aria-hidden="true">&times;</span>
+                                         </button>
+                                       </div>
+                                       <div class="modal-body" id="formulario<?php echo($valor->Id_Cliente)?>">
+                                       <form action="<?= base_url('public/inferno/modificar/'.$valor->Id_Cliente)?>" method="POST" class="mt-3">
+                                         <div class="form-row">
+                                           <div class="col-6 mb-3 font-weight-bold">
+                                             <label for="nomcliente" class="font-weight-bold">Name</label>
+                                             <input type="text" class="form-control" id="Nombre_Cliente2" name="Nombre_Cliente2" required>
+                                           </div>
+                                           <div class="col-md-6 mb-3 font-weight-bold">
+                                             <label for="direccion" class="font-weight-bold">Address</label>
+                                             <input type="text" class="form-control" id="Direccion2" name="Direccion2" required>
+                                           </div>
+                                           <div class="col-md-6 mb-3 font-weight-bold">
+                                           <label for="email " class="font-weight-bold">Email</label>
+                                             <input type="email" class="form-control" id="Correo2" name="Correo2" required>
+                                           </div>
+                                           <div class="col-md-6 mb-3 font-weight-bold">
+                                             <label for="numero" class="font-weight-bold">Phone number</label>
+                                             <input type="number" class="form-control" id="Telefono2" name="Telefono2" required>
+                                           </div>
+                                         </div>
+                                         <div class="form-row">
+                                           <div class="col-md-6 mb-3  font-weight-bold">
+                                             <label for="password" class="font-weight-bold">Password</label>
+                                             <input type="password" class="form-control" id="Contraseña2" name="Contraseña2" required>
+                                           </div>
+                                         </div>
+                                         <button type="submit" class="btn btn-info btn-block">To Update</button>
+                                       </form>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div></td>
+                            </tr>
+                        <?php endforeach?>
+                    </tbody>               
+                </table>            
                      </div>
-                   </div>
                  </div>
-               </div>
-               
-                 <!-- Button trigger modal -->
-                 <button type="button" class="btn btn-outline-info mr-2" data-toggle="modal" data-target="#Loginin">
-                 Login in 😈
-                   </button>
-               
-               <!-- Modal -->
-               <div class="modal fade" id="Loginin" tabindex="-1" role="dialog" aria-labelledby="Loginin" aria-hidden="true">
-                 <div class="modal-dialog">
-                   <div class="modal-content">
-                     <div class="modal-header">
-                       <h5 class="modal-title" id="Loginin">Welcome to Inferno.69</h5>
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                         <span aria-hidden="true">&times;</span>
-                       </button>
-                     </div>
-                     <div class="modal-body">
-                       <form>
-                         <div class="form-group">
-                           <label for="exampleInputEmail1 " class="font-weight-bold">Email address</label>
-                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                         </div>
-                         <div class="form-group">
-                           <label for="exampleInputPassword1 " class="font-weight-bold">Password</label>
-                           <input type="password" class="form-control" id="exampleInputPassword1">
-                         </div>
-                         
-                       </form>
-                     </div>
-                     <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                       <button type="button" class="btn btn-primary">Login in</button>
-                     </div>
-                   </div>
                  </div>
                </div>
           </nav>
     </header>
     <main>
        <section>
-        <div id="carouselExampleIndicators" class="carousel slide mt-3" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="<?php echo(base_url('public/imagenes/imagen33.jpeg'))?>" class="d-block w-100" alt="img1">
-            </div>
-              <div class="carousel-item">
-                <img src="<?php echo(base_url('public/imagenes/imagen44.jpeg'))?>" class="d-block w-100" alt="img2">
-            </div>
-              <div class="carousel-item">
-                <img src="<?php echo(base_url('public/imagenes/imagen55.jpeg'))?>" class="d-block w-100" alt="img3">
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-       </section><br>
+         <div class="container">
+           <di class="row">
+             <div class="col-12 col-md-12">
+                   <img class="portada" src="imagenes/portada.jpeg" alt="portada"> 
+           </div>
+         </di>
+       </div>
+    </section><br>
        <section>
            <div class="container">
                <div class="row">
-                   <div class="col-12 col-md-6">
-                       <p class="text-justify">INFERNO.69 is one of the best online stores that offers you everything in sex toys and articles for adults. We have everything you need for a full and happy sex life. Including sex toys,
+                   <div class="col-12 col-md-6 mx-auto">
+                   <h3 class="text-light">INFERNO.69</h3><br>
+                       <p class="text-justify">Is one of the best online stores that offers you everything in sex toys and articles for adults. We have everything you need for a full and happy sex life. Including sex toys,
                         anal toys, men's toys, lingerie, vibrators, lubricants and oils. That will make your intimate encounters more ardent and remember that a good orgasm is the embrace of two souls who smile with pleasure.</p>
                         <p class="text-justify">
                             Let them write poems on your legs, kissing your scars, erasing the taste of past love with your tongue.
@@ -163,14 +173,14 @@
                             Because you are passion, an orgasm to the vision. And an endless number of verses that even some have not been able to interpret.</p>
                    </div>
                    <div class="col-12 col-md-6">
-                    <img src="<?php echo(base_url('public/imagenes/imagen2.jpeg'))?>" class="img-fluid" alt="Responsive image">
+                    <img src="<?php echo(base_url('public/imagenes/imagen2.png'))?>" class="img-fluid" alt="Responsive image">
                    </div>
                </div>
            </div>
        </section>
     </main>
     <footer class="ppp">
-        <div class=" container text-dark ">
+        <div class=" container text-dark mx-auto ">
             <div class="row">                
                 <div class="col-12 col-md-4 ">  
                      <br>                    

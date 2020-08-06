@@ -46,6 +46,7 @@ $routes->post('/category/modificar/(:any)', 'categoryController::modificar/$1');
 $routes->post('/inferno/agregar', 'infernoController::agregar');
 $routes->get('/inferno/eliminar/(:any)', 'infernoController::eliminar/$1');
 $routes->post('/inferno/modificar/(:any)', 'infernoController::modificar/$1');
+$routes->get('/inferno/buscar', 'infernoController::buscar');
 
 
 

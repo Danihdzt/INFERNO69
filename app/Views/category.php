@@ -28,97 +28,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-light" href="<?php echo(base_url('public/programmers')) ?>">Programmers</a>
                   </li>
-              </ul>
-                   <!-- Button trigger modal -->
-                   <button type="button" class="btn btn-outline-success mr-2" data-toggle="modal" data-target="#Register">
-                   Sing Up 🔥
-                   </button>
-               
-               <!-- Modal -->
-               <div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
-                 <div class="modal-dialog">
-                   <div class="modal-content">
-                     <div class="modal-header">
-                       <h5 class="modal-title" id="Register">Register in Inferno.69</h5>
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                         <span aria-hidden="true">&times;</span>
-                       </button>
-                     </div>
-                     <div class="modal-body">
-                       <form>
-                         <div class="form-row">
-                           <div class="col-6 mb-3 font-weight-bold">
-                             <label for="validationDefault01">Name</label>
-                             <input type="text" class="form-control" id="validationDefault01" required>
-                           </div>
-                           <div class="col-md-6 mb-3 font-weight-bold">
-                             <label for="validationDefault02">Address</label>
-                             <input type="text" class="form-control" id="validationDefault02" required>
-                           </div>
-                           <div class="col-md-6 mb-3 font-weight-bold">
-                             <label for="validationDefault02">Identification card</label>
-                             <input type="number" class="form-control" id="validationDefault03" required>
-                           </div>
-                           <div class="col-md-6 mb-3 font-weight-bold">
-                             <label for="validationDefault05">Email</label>
-                             <input type="email" class="form-control" id="validationDefault04" required>
-                           </div>
-                         </div>
-                         <div class="form-row">
-                           <div class="col-md-6 mb-3  font-weight-bold">
-                             <label for="validationDefault03">Phone number</label>
-                             <input type="number" class="form-control" id="validationDefault05" required>
-                           </div>
-                           <div class="col-md-6 mb-3  font-weight-bold">
-                             <label for="validationDefault03">Password</label>
-                             <input type="password" class="form-control" id="validationDefault06" required>
-                           </div>
-                         </div>                            
-                       </form>
-                     </div>
-                     <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                       <button type="button" class="btn btn-primary">Sing up</button>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-               
-                 <!-- Button trigger modal -->
-                 <button type="button" class="btn btn-outline-info mr-2" data-toggle="modal" data-target="#Loginin">
-                 Login In 😈
-                   </button>
-               
-               <!-- Modal -->
-               <div class="modal fade" id="Loginin" tabindex="-1" role="dialog" aria-labelledby="Loginin" aria-hidden="true">
-                 <div class="modal-dialog">
-                   <div class="modal-content">
-                     <div class="modal-header">
-                       <h5 class="modal-title" id="Loginin">Welcome to Inferno.69</h5>
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                         <span aria-hidden="true">&times;</span>
-                       </button>
-                     </div>
-                     <div class="modal-body">
-                       <form>
-                         <div class="form-group">
-                           <label for="exampleInputEmail1 " class="font-weight-bold">Email address</label>
-                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                         </div>
-                         <div class="form-group">
-                           <label for="exampleInputPassword1 " class="font-weight-bold">Password</label>
-                           <input type="password" class="form-control" id="exampleInputPassword1">
-                         </div>
-                         </form>
-                     </div>
-                     <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                       <button type="button" class="btn btn-primary">Login in</button>
-                     </div>
-                   </div>
-                 </div>
-               </div>
+              </ul>   
                <!-- Button trigger modal -->
                    <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#AddProducts">
                    Add Products 🍑
@@ -126,24 +36,24 @@
                
                <!-- Modal -->
                <div class="modal fade" id="AddProducts" tabindex="-1" role="dialog" aria-labelledby="AddProducts" aria-hidden="true">
-                 <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                 <div class="modal-dialog modal-xl">
                    <div class="modal-content">
-                     <div class="modal-header">
-                       <h5 class="modal-title" id="AddProducts">Add Products</h5>
-                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <div class="modal-header bg-dark text-light">
+                        <h5 class="modal-title" id="AddProducts">Add Products</h5>
+                       <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
                          <span aria-hidden="true">&times;</span>
                        </button>
                      </div>
-                     <div class="modal-body">
+                     <div class="modal-body bg-dark text-light">
                      <form action="<?php echo(base_url('public/category/agregar'))?>" method="POST">
-                         <div class="form-group">
-                           <label for="nombreProducto"  class="font-weight-bold">Products Name</label>
-                           <input type="text" class="form-control" id="nombre" name="nombre">
+                         <div class="form-group col-12 col-md-6 mx-auto">
+                           <label for="nombre"  class=" font-weight-bold">Products Name</label>
+                           <input type="text" class="form-control" id="Nombre" name="Nombre">
                          </div>
-                         <div class="form-group">
+                         <div class="form-group col-12 col-md-6 mx-auto">
                              <label for="idCategoria" class="font-weight-bold">Category</label>
                              <h6>1=Men, 2=Lingerie, 3=Lubricants, 4=Annals, 5=Vibrators, 6=Accessories.</h6>
-                             <select class="form-control" id="idCategoria" name="idCategoria">
+                             <select class="form-control" id="Id_Categoria" name="Id_Categoria">
                                <option>1</option>
                                <option>2</option>
                                <option>3</option>
@@ -152,15 +62,15 @@
                                <option>6</option>
                              </select>
                            </div>
-                           <div class="form-group">
-                             <label for="precioProducto" class="font-weight-bold">Price</label>
+                           <div class="form-group col-12 col-md-6 mx-auto">
+                             <label for="Precio_Producto" class=" font-weight-bold">Price</label>
                              <input type="number" class="form-control" id="Precio_Producto" name="Precio_Producto" aria-describedby="emailHelp">
                            </div>
-                           <h5 class="text-center mt-4"><?php echo(session('mensaje')) ?></h5>
-                           
-                     <button class="btn btn-primary" type="submit">Add Products</button>
+                           <div class="col-12 col-md-6 mx-auto">
+                               <button class="col-12 col-md-6  btn btn-primary" type="submit">Add Products</button>
+                           </div>
                      </form> <br><br>
-                     <table class="table table-striped table-dark">
+                     <table class="table table-striped bg-dark text-light">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -177,28 +87,34 @@
                                 <td><?php echo($valor->Id_Categoria)?></td>
                                 <td><?php echo($valor->Precio_Producto)?></td>
                                 <td><a href="<?php echo(base_url('public/category/eliminar/'.$valor->Id_Producto))?>"class="btn btn-danger">Remove</a></td>
-                                <td><button type="button" class="btn btn-success" href="#exampleModal<?php echo($valor->Id_Producto)?>" data-toggle="modal" data-target="#exampleModal">
-                                To Update</button>
+                                <td><button type="submit" class="btn btn-success" href="#exampleModal<?php echo($valor->Id_Producto)?>" data-toggle="modal" data-target="#exampleModal<?php echo($valor->Id_Producto)?>">
+                                To Update </button>
+                                
 
-                                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                 <div class="modal fade" id="exampleModal<?php echo($valor->Id_Producto)?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                    <div class="modal-dialog">
                                      <div class="modal-content">
                                        <div class="modal-header">
+                                       <h5 class="modal-title" id="AddProducts">To Update</h5>
                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                            <span aria-hidden="true">&times;</span>
                                          </button>
                                        </div>
-                                       <div class="modal-body" id="formulario<?php echo($valor->Id_Producto)?>">
+                                       <div class="modal-body" id="formularioo<?php echo($valor->Id_Producto)?>">
                                        <form action="<?= base_url('public/category/modificar/'.$valor->Id_Producto)?>" method="POST" class="mt-3">
-                                      <div class="form-group">
-                                          <input type="text" class="form-control" id="Nombre2" name="Nombre2" value="<?=$valor->Nombre?>">
-                                      </div>
-                                      <div class="form-group">
-                                          <input type="number" class="form-control" id="Id_Categoria2" name="Id_Categoria2" value="<?=$valor->Id_Categoria?>">
-                                      </div>
-                                      <div class="form-group">
-                                          <input type="number" class="form-control" id="Precio_Producto2" name="Precio_Producto2" value="<?=$valor->Precio_Producto?>">
-                                      </div>
+                                       <div class="form-group">
+                                         <label for="nombre"  class="font-weight-bold">Products Name</label>
+                                         <input type="text" class="form-control" id="Nombre2" name="Nombre2">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="Category" class="font-weight-bold">Category</label>
+                                           <h6>1=Men, 2=Lingerie, 3=Lubricants, 4=Annals, 5=Vibrators, 6=Accessories.</h6>
+                                           <input type="number" class="form-control" id="Id_Categoria2" name="Id_Categoria2" aria-describedby="emailHelp">
+                                         </div>
+                                         <div class="form-group">
+                                       <label for="Precio_Producto" class="font-weight-bold">Price</label>
+                                       <input type="number" class="form-control" id="Precio_Producto2" name="Precio_Producto2" aria-describedby="emailHelp">
+                                     </div>
                                       <button type="submit" class="btn btn-info btn-block">To Update</button>
                                        </form>
                                        </div>
@@ -210,9 +126,7 @@
                     </tbody>               
                 </table>            
                      </div>
-                     <div class="modal-footer">
-                    </div>
-                   </div>
+                 </div>
                  </div>
                </div>
       </nav>
@@ -267,7 +181,7 @@
                               <img src="<?php echo(base_url('public/imagenes/accessories11.png')) ?>" class="card-img-top" alt="accessories">
                               <div class="card-body">
                               <hr class="bg-dark">
-                                <h5 class="card-title text-center text-dark">accessories</h5>
+                                <h5 class="card-title text-center text-dark">Accessories</h5>
                                 <p class="card-text"></p>
                                 </a>
                               </div>
@@ -277,7 +191,7 @@
                               <img  src="<?php echo(base_url('public/imagenes/lubricants3.png')) ?>" class="card-img-top" alt="lubricants">
                               <div class="card-body">
                               <hr class="bg-dark">
-                                <h5 class="card-title text-center text-dark" href="<?php echo(base_url('public/lubricants')) ?>">lubricants</h5>
+                                <h5 class="card-title text-center text-dark" href="<?php echo(base_url('public/lubricants')) ?>">Lubricants</h5>
                                 <p class="card-text"></p>
                                 </a>
                               </div>
@@ -287,7 +201,7 @@
                               <img src="<?php echo(base_url('public/imagenes/lingerie19.png')) ?>" class="card-img-top" alt="lingerie">
                               <div class="card-body">
                               <hr class="bg-dark">
-                                <h5 class="card-title text-center text-dark"> lingerie</h5>
+                                <h5 class="card-title text-center text-dark"> Lingerie</h5>
                                 <p class="card-text"></p>
                                 </a>
                               </div>

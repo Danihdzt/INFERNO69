@@ -16,3 +16,10 @@ p{
 background-image: url(imagenes/sd.jpeg);
 background-repeat: no-repeat;
 }
+
+.portada{
+    background-image: url(imagenes/portada.jpeg);
+    width: 100%;
+    height: 400px;
+    
+}

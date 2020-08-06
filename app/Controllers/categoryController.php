@@ -19,8 +19,8 @@ class categoryController extends BaseController
 		
 		$productModel = new ProductModel();
 
-		$nombre = $this->request->getPost('nombre');
-		$idcategoria = $this->request->getPost('idCategoria');
+		$nombre = $this->request->getPost('Nombre');
+		$idcategoria = $this->request->getPost('Id_Categoria');
 		$precioproducto = $this->request->getPost('Precio_Producto');
 
 		$productModel->save([
@@ -29,7 +29,7 @@ class categoryController extends BaseController
 			'Precio_Producto'=>$precioproducto
 		]);
 
-		return redirect()->to(base_url('public/category'))->with('mensaje', 'El producto ha sido registrado con éxito!');
+		return redirect()->to(base_url('public/category'));
 		
 	}
 

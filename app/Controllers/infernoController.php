@@ -34,7 +34,7 @@ class infernoController extends BaseController
 			'Correo'=>$correo
 		]);
 
-		return redirect()->to(base_url('public/inferno'))->with('mensaje', 'El producto ha sido registrado con éxito!');
+		return redirect()->to(base_url('public/inferno'));
 		
 	}
 
@@ -42,8 +42,9 @@ class infernoController extends BaseController
 
 		$infernoModel = new InfernoModel();
 
-		$infernoModel ->where('Id_Producto',$Id_Cliente)->delete();
+		$infernoModel ->where('Id_Cliente',$Id_Cliente)->delete();
 
+	
 		return redirect()->to(base_url('public/inferno/'));
 
 	}
@@ -60,14 +61,17 @@ class infernoController extends BaseController
 
 
 		$infernoModel->update($Id_Cliente,[
-			'Nombre_Cliente2'=>$nombreCliente,
-			'Telefono2'=>$telefono,
+			'Nombre_Cliente'=>$nombreCliente,
+			'Telefono'=>$telefono,
 			'Direccion'=>$direccion,
 			'Contraseña'=>$contraseña,
-			'Correo2'=>$correo
+			'Correo'=>$correo
 		]);
 
 		return redirect()->to(base_url('public/inferno/'));
 		
 	}
+
+
+	
 }
