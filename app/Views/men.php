@@ -33,13 +33,13 @@
           </nav>
     </header>
     <main>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/men1.png')) ?>" class="card-img-top" alt="men1">
+                              <img src="<?php echo(base_url('public/imagenes/men1.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="men1">
                               <div class="card-body">
                                 <h5 class="card-title">MEN WAND - MALE MASTURBATOR</h5>
                               </div>
@@ -48,7 +48,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/men2.png')) ?>" class="card-img-top" alt="men2">
+                              <img src="<?php echo(base_url('public/imagenes/men2.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="men2">
                               <div class="card-body">
                                 <h5 class="card-title">SATISFYER VIBRATOR RING - COUPLES</h5>
                               </div>
@@ -57,7 +57,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/men3.png')) ?>" class="card-img-top" alt="...">
+                              <img src="<?php echo(base_url('public/imagenes/men3.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="...">
                               <div class="card-body">
                                 <h5 class="card-title">VIBRATING RING - LIGHT IN THE DARK</h5>
                               </div>
@@ -66,7 +66,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/men4.png')) ?>" class="card-img-top" alt="men4">
+                                <img src="<?php echo(base_url('public/imagenes/men4.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="men4">
                                 <div class="card-body">
                                   <h5 class="card-title">MALE MASTURBATOR EGG</h5>
                                 </div>
@@ -79,13 +79,13 @@
                 </div>
             </div>
         </section> <br>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/men5.png')) ?>" class="card-img-top" alt="men5">
+                              <img src="<?php echo(base_url('public/imagenes/men5.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="men5">
                               <div class="card-body">
                                 <h5 class="card-title">VIBRATING RING WITH TONGUE</h5>
                               </div>
@@ -137,6 +137,7 @@
             </div>
         </div>
     </footer>
+    <script src="<?php echo(base_url('public/controller.js'))?>"></script>  
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

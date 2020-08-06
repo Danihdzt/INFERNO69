@@ -36,7 +36,7 @@
                 <div class="col-12 col-md-12">
                     <div class="card-deck">
                         <div class="card">
-                          <img src="<?php echo(base_url('public/imagenes/sabina.jpeg'))?>" class="card-img-top" alt="Sabina">
+                          <img src="<?php echo(base_url('public/imagenes/sabina.jpeg'))?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto" alt="Sabina">
                           <div class="card-body">
                             <h5 class="card-title text-center">Sabina Álvarez Monsalve</h5>                       
                             <img src="<?php echo(base_url('public/imagenes/gmail (1).png'))?>" width="20" height="20" alt="github" loading="lazy"> Sabinamonsalve71@gmail.com <br>
@@ -47,7 +47,7 @@
                           </div>                         
                         </div>
                         <div class="card">
-                          <img src="<?php echo(base_url('public/imagenes/mateo.jpeg'))?>" class="card-img-top" alt="Mateo">
+                          <img src="<?php echo(base_url('public/imagenes/mateo.jpeg'))?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto" alt="Mateo">
                           <div class="card-body">
                             <h5 class="card-title text-center">Mateo Pantoja Jiménez</h5>                           
                             <img src="<?php echo(base_url('public/imagenes/gmail (1).png'))?>" width="20" height="20" alt="github" loading="lazy"> Mateo.pantoja07@gmail.com <br>
@@ -58,7 +58,7 @@
                           </div>                         
                         </div>
                         <div class="card">
-                          <img src="<?php echo(base_url('public/imagenes/Daniela.jpeg'))?>" class="card-img-top" alt="Daniela">
+                          <img src="<?php echo(base_url('public/imagenes/Daniela.jpeg'))?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto" alt="Daniela">
                           <div class="card-body">
                             <h5 class="card-title text-center">Daniela Hernández Torres</h5>                                          
                             <img src="<?php echo(base_url('public/imagenes/gmail (1).png'))?>" width="20" height="20" alt="github" loading="lazy"> Danihdzt627@gmail.com <br>
@@ -78,7 +78,7 @@
               <div class="col-12 col-md-4 mx-auto">
                   <div class="card-deck">
                       <div class="card">
-                        <img src="<?php echo(base_url('public/imagenes/Camilo.jpeg'))?>" class="card-img-top" alt="Camilo">
+                        <img src="<?php echo(base_url('public/imagenes/Camilo.jpeg'))?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto" alt="Camilo">
                         <div class="card-body">
                           <h5 class="card-title text-center">Camilo Marulanda Zapata</h5>                         
                             <img src="<?php echo(base_url('public/imagenes/gmail (1).png'))?>" width="20" height="20" alt="github" loading="lazy"> Camilomarulanda9150@gmail.com <br>                                                 
@@ -93,7 +93,7 @@
               <div class="col-12 col-md-4 mx-auto">
                   <div class="card-deck">
                       <div class="card">
-                        <img src="<?php echo(base_url('public/imagenes/manuela2.jpeg'))?>" class="card-img-top" alt="Manuela">
+                        <img src="<?php echo(base_url('public/imagenes/manuela2.jpeg'))?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto" alt="Manuela">
                         <div class="card-body">
                           <h5 class="card-title text-center">Manuela Cataño Gómez</h5>                         
                           <img src="<?php echo(base_url('public/imagenes/gmail (1).png'))?>" width="20" height="20" alt="github" loading="lazy"> Manucata2001@gmail.com <br>
@@ -147,6 +147,7 @@
             </div>
         </div>
     </footer>
+    <script src="<?php echo(base_url('public/controller.js'))?>"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 

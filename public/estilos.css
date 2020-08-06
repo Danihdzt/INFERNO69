@@ -23,3 +23,26 @@ background-repeat: no-repeat;
     height: 400px;
     
 }
+
+.gallery {
+    width: 400px;
+}
+
+  .imgContainer {
+    display: inline-block;
+    background-color: black;
+    height: 100px;
+    width: 25%;
+    overflow: hidden;
+  }
+  
+  .hoverEffect {
+    height: 300px;
+    width: 400px;
+    opacity: 0.6;
+    transition: all 500ms;
+  }
+  .hoverEffect:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }

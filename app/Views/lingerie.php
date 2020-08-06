@@ -32,13 +32,13 @@
           </nav>
     </header>
     <main>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie1.png')) ?>" class="card-img-top" alt="lingerie1">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie1.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie1">
                               <div class="card-body">
                                 <h5 class="card-title">BODY ODILE</h5>
                               </div>
@@ -47,7 +47,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie2.png')) ?>" class="card-img-top" alt="lingerie2">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie2.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie2">
                               <div class="card-body">
                                 <h5 class="card-title">ILLUSION MESH DRESS</h5>
                               </div>
@@ -56,7 +56,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie3.png')) ?>" class="card-img-top" alt="lingerie3">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie3.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie3">
                               <div class="card-body">
                                 <h5 class="card-title">BODY IN LACE AND TULL</h5>
                               </div>
@@ -65,7 +65,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/lingerie4.png')) ?>" class="card-img-top" alt="lingerie4.png">
+                                <img src="<?php echo(base_url('public/imagenes/lingerie4.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie4.png">
                                 <div class="card-body">
                                   <h5 class="card-title">PASSERELLA DI ROSE</h5>
                                 </div>
@@ -78,13 +78,13 @@
                 </div>
             </div>
         </section> <br>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie5.png')) ?>" class="card-img-top" alt="lingerie5.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie5.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie5.png">
                               <div class="card-body">
                                 <h5 class="card-title">BODYSTOCKING IDILIO</h5>
                               </div>
@@ -93,7 +93,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie6.png')) ?>" class="card-img-top" alt="lingerie6.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie6.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie6.png">
                               <div class="card-body">
                                 <h5 class="card-title">CUTE BODY</h5>
                               </div>
@@ -102,7 +102,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie7.png')) ?>" class="card-img-top" alt="lingerie7.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie7.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie7.png">
                               <div class="card-body">
                                 <h5 class="card-title">TOIKI AMURA SET</h5>
                               </div>
@@ -111,7 +111,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/lingerie8.png')) ?>" class="card-img-top" alt="lingerie8.png">
+                                <img src="<?php echo(base_url('public/imagenes/lingerie8.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie8.png">
                                 <div class="card-body">
                                   <h5 class="card-title">QATAR SET</h5>
                                 </div>
@@ -124,13 +124,13 @@
                 </div>
             </div>
         </section><br>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie9.png')) ?>" class="card-img-top" alt="lingerie9.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie9.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie9.png">
                               <div class="card-body">
                                 <h5 class="card-title">WHITE NICOLE SET</h5>
                               </div>
@@ -139,7 +139,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie10.png')) ?>" class="card-img-top" alt="lingerie10.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie10.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie10.png">
                               <div class="card-body">
                                 <h5 class="card-title">BLACK TAIPEI SET</h5>
                               </div>
@@ -148,7 +148,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie11.png')) ?>" class="card-img-top" alt="lingerie11.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie11.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie11.png">
                               <div class="card-body">
                                 <h5 class="card-title">THREE PIECE SET</h5>
                               </div>
@@ -157,7 +157,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/lingerie12.png')) ?>" class="card-img-top" alt="lingerie12.png">
+                                <img src="<?php echo(base_url('public/imagenes/lingerie12.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie12.png">
                                 <div class="card-body">
                                   <h5 class="card-title">THREE PIECE SET2</h5>
                                 </div>
@@ -170,13 +170,13 @@
                 </div>
             </div>
         </section><br>
-        <section class="p-10px">
+        <section class="p-10px" id="effect-hover">
             <div class="container ">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card ">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie13.png')) ?>" class="card-img-top" alt="lingerie13.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie13.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie13.png">
                               <div class="card-body">
                                 <h5 class="card-title">THREE PIECE SET3</h5>
                               </div>
@@ -185,7 +185,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie14.png')) ?>" class="card-img-top" alt="lingerie14.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie14.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie14.png">
                               <div class="card-body">
                                 <h5 class="card-title">PANTY OSAKA</h5>
                               </div>
@@ -194,7 +194,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie15.png')) ?>" class="card-img-top" alt="lingerie15.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie15.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie15.png">
                               <div class="card-body">
                                 <h5 class="card-title">CHARM SENSUAL PANTY</h5>
                               </div>
@@ -203,7 +203,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/lingerie16.png')) ?>" class="card-img-top" alt="lingerie16.png">
+                                <img src="<?php echo(base_url('public/imagenes/lingerie16.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie16.png">
                                 <div class="card-body">
                                   <h5 class="card-title">TULLE CORSET SET</h5>
                                 </div>
@@ -216,13 +216,13 @@
                 </div>
             </div>
         </section><br>
-        <section class="p-10px">
+        <section class="p-10px" id="effect-hover">
           <div class="container ">
               <div class="row">
                   <div class="col-12 col-md12">
                       <div class="card-deck">
                           <div class="card ">
-                            <img src="<?php echo(base_url('public/imagenes/lingerie17.png')) ?>" class="card-img-top" alt="lingerie17.png">
+                            <img src="<?php echo(base_url('public/imagenes/lingerie17.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie17.png">
                             <div class="card-body">
                               <h5 class="card-title">SENSUAL LIGHTWEIGHT WITH PANTY</h5>
                             </div>
@@ -231,7 +231,7 @@
                             </div>
                           </div>
                           <div class="card">
-                            <img src="<?php echo(base_url('public/imagenes/lingerie18.png')) ?>" class="card-img-top" alt="lingerie18.png">
+                            <img src="<?php echo(base_url('public/imagenes/lingerie18.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie18.png">
                             <div class="card-body">
                               <h5 class="card-title">TOKYO SET</h5>
                             </div>
@@ -240,7 +240,7 @@
                             </div>
                           </div>
                           <div class="card">
-                            <img src="<?php echo(base_url('public/imagenes/lingerie19.png')) ?>" class="card-img-top" alt="lingerie19.png">
+                            <img src="<?php echo(base_url('public/imagenes/lingerie19.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie19.png">
                             <div class="card-body">
                               <h5 class="card-title">MOLLY SET</h5>
                             </div>
@@ -249,7 +249,7 @@
                             </div>
                           </div>
                           <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/lingerie20.png')) ?>" class="card-img-top" alt="lingerie20.png">
+                              <img src="<?php echo(base_url('public/imagenes/lingerie20.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="lingerie20.png">
                               <div class="card-body">
                                 <h5 class="card-title">PHILIPPINES BLACK PANTY</h5>
                               </div>
@@ -299,7 +299,9 @@
                                                                                       
             </div>
         </div>
-    </footer>   
+    </footer> 
+
+        <script src="<?php echo(base_url('public/controller.js'))?>"></script>  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

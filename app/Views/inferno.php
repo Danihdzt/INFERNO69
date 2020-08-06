@@ -36,7 +36,7 @@
                
                <!-- Modal -->
                <div class="modal fade text-light" id="Register" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
-                 <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                 <div class="modal-dialog modal-dialog-scrollable modal-xl">
                    <div class="modal-content">
                      <div class="modal-header bg-dark">
                        <h5 class="modal-title " id="Register">Register in Inferno.69</h5>
@@ -100,13 +100,13 @@
                                  <div class="modal fade" id="exampleModal<?php echo($valor->Id_Cliente)?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                    <div class="modal-dialog">
                                      <div class="modal-content">
-                                       <div class="modal-header">
+                                       <div class="modal-header bg-dark text-light">
                                        <h5 class="modal-title" id="AddProducts">To Update</h5>
-                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                         <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
                                            <span aria-hidden="true">&times;</span>
                                          </button>
                                        </div>
-                                       <div class="modal-body" id="formulario<?php echo($valor->Id_Cliente)?>">
+                                       <div class="modal-body bg-dark text-light" id="formulario<?php echo($valor->Id_Cliente)?>">
                                        <form action="<?= base_url('public/inferno/modificar/'.$valor->Id_Cliente)?>" method="POST" class="mt-3">
                                          <div class="form-row">
                                            <div class="col-6 mb-3 font-weight-bold">

@@ -32,13 +32,13 @@
           </nav>
     </header>
     <main>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators1.png')) ?>" class="card-img-top" alt="vibrators1">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators1.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators1">
                               <div class="card-body">
                                 <h5 class="card-title">KONG - DOUBLE VIBRATOR</h5>
                               </div>
@@ -47,7 +47,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators2.png')) ?>" class="card-img-top" alt="vibrators2">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators2.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators2">
                               <div class="card-body">
                                 <h5 class="card-title">SWEET SENSATION ICE CREAM - SATISFYER</h5>
                               </div>
@@ -56,7 +56,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators3.png')) ?>" class="card-img-top" alt="vibrators3">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators3.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators3">
                               <div class="card-body">
                                 <h5 class="card-title">SATISFYER PRO 3 VIBRATION</h5>
                               </div>
@@ -65,7 +65,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/vibrators4.png')) ?>" class="card-img-top" alt="vibrators4">
+                                <img src="<?php echo(base_url('public/imagenes/vibrators4.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators4">
                                 <div class="card-body">
                                   <h5 class="card-title">LOTUS FLOWER - VIBRATOR AND CLITOR MASSAGER</h5>
                                 </div>
@@ -78,13 +78,13 @@
                 </div>
             </div>
         </section> <br>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators5.png')) ?>" class="card-img-top" alt="vibrators5">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators5.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators5">
                               <div class="card-body">
                                 <h5 class="card-title">THE KING - DOUBLE VIBRATOR</h5>
                               </div>
@@ -93,7 +93,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators6.png')) ?>" class="card-img-top" alt="vibrators6">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators6.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators6">
                               <div class="card-body">
                                 <h5 class="card-title">WANDER WOMAN - VIBRATOR</h5>
                               </div>
@@ -102,7 +102,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators7.png')) ?>" class="card-img-top" alt="vibrators7">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators7.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators7">
                               <div class="card-body">
                                 <h5 class="card-title">NYMPH - VIBRATOR AND CLITOR MASSAGER AND POINT G</h5>
                               </div>
@@ -111,7 +111,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/vibrators8.png')) ?>" class="card-img-top" alt="vibrators8">
+                                <img src="<?php echo(base_url('public/imagenes/vibrators8.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators8">
                                 <div class="card-body">
                                   <h5 class="card-title">JIVE - REMOTE VIBRATOR WITH APP</h5>
                                 </div>
@@ -124,13 +124,13 @@
                 </div>
             </div>
         </section><br>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators9.png')) ?>" class="card-img-top" alt="vibrators9">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators9.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators9">
                               <div class="card-body">
                                 <h5 class="card-title">SATISFYER PRO 2 NEXT GENERATION</h5>
                               </div>
@@ -139,7 +139,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators10.png')) ?>" class="card-img-top" alt="vibrators10">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators10.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators10">
                               <div class="card-body">
                                 <h5 class="card-title">ELVA - REMOTE CONTROL VIBRATOR EGG</h5>
                               </div>
@@ -148,7 +148,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators11.png')) ?>" class="card-img-top" alt="vibrators11">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators11.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators11">
                               <div class="card-body">
                                 <h5 class="card-title">SATISFYER BANANA</h5>
                               </div>
@@ -157,7 +157,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/vibrators12.png')) ?>" class="card-img-top" alt="vibrators12">
+                                <img src="<?php echo(base_url('public/imagenes/vibrators12.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators12">
                                 <div class="card-body">
                                   <h5 class="card-title">ONE NIGHT - SATISFYER</h5>
                                 </div>
@@ -170,13 +170,13 @@
                 </div>
             </div>
         </section><br>
-        <section class="p-10px">
+        <section class="p-10px" id="effect-hover">
             <div class="container ">
                 <div class="row">
                     <div class="col-12 col-md-3">
                         <div class="card-deck">
                             <div class="card ">
-                              <img src="<?php echo(base_url('public/imagenes/vibrators13.png')) ?>" class="card-img-top" alt="vibrators13">
+                              <img src="<?php echo(base_url('public/imagenes/vibrators13.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="vibrators13">
                               <div class="card-body">
                                 <h5 class="card-title">GAGA - CLITOR SUCTIONER</h5>
                               </div>
@@ -228,6 +228,7 @@
         </div>
     </footer>
 
+    <script src="<?php echo(base_url('public/controller.js'))?>"></script>  
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

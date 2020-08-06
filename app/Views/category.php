@@ -92,15 +92,15 @@
                                 
 
                                  <div class="modal fade" id="exampleModal<?php echo($valor->Id_Producto)?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                   <div class="modal-dialog">
+                                   <div class="modal-dialog modal-dialog-scrollable">
                                      <div class="modal-content">
-                                       <div class="modal-header">
+                                       <div class="modal-header bg-dark text-light">
                                        <h5 class="modal-title" id="AddProducts">To Update</h5>
-                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                         <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
                                            <span aria-hidden="true">&times;</span>
                                          </button>
                                        </div>
-                                       <div class="modal-body" id="formularioo<?php echo($valor->Id_Producto)?>">
+                                       <div class="modal-body bg-dark text-light" id="formularioo<?php echo($valor->Id_Producto)?>">
                                        <form action="<?= base_url('public/category/modificar/'.$valor->Id_Producto)?>" method="POST" class="mt-3">
                                        <div class="form-group">
                                          <label for="nombre"  class="font-weight-bold">Products Name</label>

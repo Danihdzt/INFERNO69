@@ -33,13 +33,13 @@
           </nav>
     </header>
     <main>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/anal1.png')) ?>" class="card-img-top" alt="anal1">
+                              <img src="<?php echo(base_url('public/imagenes/anal1.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="anal1">
                               <div class="card-body">
                                 <h5 class="card-title">ANAL BALLS WITH VIBRATION</h5>
                               </div>
@@ -48,7 +48,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/anal2.png')) ?>" class="card-img-top" alt="anal2">
+                              <img src="<?php echo(base_url('public/imagenes/anal2.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="anal2">
                               <div class="card-body">
                                 <h5 class="card-title">VICK - REMOTE CONTROL VIBRATOR</h5>
                               </div>
@@ -57,7 +57,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/anal3.png')) ?>" class="card-img-top" alt="anal3">
+                              <img src="<?php echo(base_url('public/imagenes/anal3.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="anal3">
                               <div class="card-body">
                                 <h5 class="card-title">PLUGS ANALES SATISFYER</h5>
                               </div>
@@ -66,7 +66,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/anal4.png')) ?>" class="card-img-top" alt="anal4">
+                                <img src="<?php echo(base_url('public/imagenes/anal4.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="anal4">
                                 <div class="card-body">
                                   <h5 class="card-title">ANAL BALLS</h5>
                                 </div>
@@ -79,13 +79,13 @@
                 </div>
             </div>
         </section> <br>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="card-deck">
                             <div class="card" >
-                              <img src="<?php echo(base_url('public/imagenes/anal5.png')) ?>" class="card-img-top" alt="anal5.">
+                              <img src="<?php echo(base_url('public/imagenes/anal5.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="anal5.">
                               <div class="card-body">
                                 <h5 class="card-title">ANAL PLUG WITH CABBAGE</h5>
                               </div>
@@ -94,7 +94,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/anal6.png')) ?>" class="card-img-top" alt="anal6">
+                              <img src="<?php echo(base_url('public/imagenes/anal6.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="anal6">
                               <div class="card-body">
                                 <h5 class="card-title">ANAL-PLUG SPINNER FOR ANAL TRAINING</h5>
                               </div>
@@ -145,6 +145,7 @@
             </div>
         </div>
     </footer>
+    <script src="<?php echo(base_url('public/controller.js'))?>"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

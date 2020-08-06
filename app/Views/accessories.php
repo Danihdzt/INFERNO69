@@ -32,13 +32,13 @@
           </nav>
     </header>
     <main>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/accessories1.png')) ?>" class="card-img-top" alt="accessories1">
+                              <img src="<?php echo(base_url('public/imagenes/accessories1.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories1">
                               <div class="card-body">
                                 <h5 class="card-title">SILICONE BALL GAG BLACK</h5>
                               </div>
@@ -47,7 +47,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/accessories2.png')) ?>" class="card-img-top" alt="accessories2">
+                              <img src="<?php echo(base_url('public/imagenes/accessories2.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories2">
                               <div class="card-body">
                                 <h5 class="card-title">FLOGGER BLACK</h5>
                               </div>
@@ -56,7 +56,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/accessories3.png')) ?>" class="card-img-top" alt="accessories3">
+                              <img src="<?php echo(base_url('public/imagenes/accessories3.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories3">
                               <div class="card-body">
                                 <h5 class="card-title">PALM CROP BLACK</h5>
                               </div>
@@ -65,7 +65,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/accessories4.png')) ?>" class="card-img-top" alt="accessories4">
+                                <img src="<?php echo(base_url('public/imagenes/accessories4.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories4">
                                 <div class="card-body">
                                   <h5 class="card-title">PASSIONATE PADDLE BLACK</h5>
                                 </div>
@@ -78,13 +78,13 @@
                 </div>
             </div>
         </section> <br>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/accessories5.png')) ?>" class="card-img-top" alt="accessories5">
+                              <img src="<?php echo(base_url('public/imagenes/accessories5.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories5">
                               <div class="card-body">
                                 <h5 class="card-title">NIPPLE CLAMP METAL BLACK</h5>
                               </div>
@@ -93,7 +93,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/accessories6.png')) ?>" class="card-img-top" alt="accessories6">
+                              <img src="<?php echo(base_url('public/imagenes/accessories6.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories6">
                               <div class="card-body">
                                 <h5 class="card-title">NIPPLE CHAIN</h5>
                               </div>
@@ -102,7 +102,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/accessories7.png')) ?>" class="card-img-top" alt="accessories7">
+                              <img src="<?php echo(base_url('public/imagenes/accessories7.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories7">
                               <div class="card-body">
                                 <h5 class="card-title">NIPPLE CLAMPS METAL SILVER</h5>
                               </div>
@@ -111,7 +111,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/accessories8.png')) ?>" class="card-img-top" alt="accessories8">
+                                <img src="<?php echo(base_url('public/imagenes/accessories8.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories8">
                                 <div class="card-body">
                                   <h5 class="card-title">NIPPLE MOON HEART BLACK</h5>
                                 </div>
@@ -124,13 +124,13 @@
                 </div>
             </div>
         </section><br>
-        <section>
+        <section id="effect-hover">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md12">
                         <div class="card-deck">
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/accessories9.jpg')) ?>" class="card-img-top" alt="accessories9">
+                              <img src="<?php echo(base_url('public/imagenes/accessories9.jpg')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories9">
                               <div class="card-body">
                                 <h5 class="card-title">FETISH FANTASY CUFFS BLACK</h5>
                               </div>
@@ -139,7 +139,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/accessories10.png')) ?>" class="card-img-top" alt="accessories10">
+                              <img src="<?php echo(base_url('public/imagenes/accessories10.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories10">
                               <div class="card-body">
                                 <h5 class="card-title">SENSUAL MASK</h5>
                               </div>
@@ -148,7 +148,7 @@
                               </div>
                             </div>
                             <div class="card">
-                              <img src="<?php echo(base_url('public/imagenes/accessories11.png')) ?>" class="card-img-top" alt="accessories11">
+                              <img src="<?php echo(base_url('public/imagenes/accessories11.png')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories11">
                               <div class="card-body">
                                 <h5 class="card-title">WHORE NECKLACE</h5>
                               </div>
@@ -157,7 +157,7 @@
                               </div>
                             </div>
                             <div class="card">
-                                <img src="<?php echo(base_url('public/imagenes/accessories12.jpeg')) ?>" class="card-img-top" alt="accessories12">
+                                <img src="<?php echo(base_url('public/imagenes/accessories12.jpeg')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories12">
                                 <div class="card-body">
                                   <h5 class="card-title">BLACK CANDLES</h5>
                                 </div>
@@ -170,13 +170,13 @@
                 </div>
             </div>
         </section><br>
-        <section class="p-10px">
+        <section class="p-10px" id="effect-hover">
             <div class="container ">
                 <div class="row">
                     <div class="col-12 col-md-3">
                         <div class="card-deck">
                             <div class="card ">
-                              <img src="<?php echo(base_url('public/imagenes/accessories13.jpg')) ?>" class="card-img-top" alt="accessories13">
+                              <img src="<?php echo(base_url('public/imagenes/accessories13.jpg')) ?>" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="card-img-top mx-auto hoverEffect" alt="accessories13">
                               <div class="card-body">
                                 <h5 class="card-title">KIT FETISH FANTASY</h5>
                               </div>
@@ -228,6 +228,7 @@
         </div>
     </footer>
 
+<script src="<?php echo(base_url('public/controller.js'))?>"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
